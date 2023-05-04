@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c3t4Sq7M3PtPrQ8MNifw7sKbwZ6R0gANyjT6RlZtKMxtTe8KsRcaOOUh+4UWbaS22eFJDiEQE6Uy1LMd2YEFMw==",
+  "dgSpecHash": "nWQMSDqdM1bgfmMF8U/bADyaN9hF72pU5dLcC+3916kP3Peqd8S7Y4nwK1QtTkphUfr27yVQfNPP4ZsJILLeLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RyC-92\\Downloads\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj",
+  "projectFilePath": "C:\\git-hub\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RyC-92\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\RyC-92\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.9\\microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",

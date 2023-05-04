@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RyC-92\\Downloads\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj": {}
+    "C:\\git-hub\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RyC-92\\Downloads\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj": {
+    "C:\\git-hub\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RyC-92\\Downloads\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj",
+        "projectUniqueName": "C:\\git-hub\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj",
         "projectName": "NetCoreYouTube",
-        "projectPath": "C:\\Users\\RyC-92\\Downloads\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj",
+        "projectPath": "C:\\git-hub\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\NetCoreYouTube.csproj",
         "packagesPath": "C:\\Users\\RyC-92\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RyC-92\\Downloads\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\obj\\",
+        "outputPath": "C:\\git-hub\\Recursos-NetCoreySQL\\NetCoreYouTube\\NetCoreYouTube\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RyC-92\\AppData\\Roaming\\NuGet\\NuGet.Config",
