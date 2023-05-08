@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using Microsoft.AspNetCore.Mvc;
+using NetCoreYouTube.Models;
 using NetCoreYouTube.Recursos;
 using Newtonsoft.Json;
 
@@ -37,8 +38,8 @@ namespace NetCoreYouTube.Controllers
 
                 {
 
-                    categoria = jsonCategoria,
-                    producto = jsonProducto
+                    categoria =JsonConvert.DeserializeObject<List<Categoria>>(jsonCategoria),
+                    producto = JsonConvert.DeserializeObject<List<Producto>>(jsonProducto),
 
                 }
 
@@ -50,6 +51,39 @@ namespace NetCoreYouTube.Controllers
 
 
         }
+
+        [HttpPost]
+        [Route("agregar")]
+
+        public dynamic AgregarProducto(Producto producto)
+        {
+            List<Parametro> parametros = new List<Parametro>
+            {
+
+            new Parametro("@IDCategoria", producto.IDCategoria),
+            new Parametro("@Nombre", producto.Nombre),
+            new Parametro("@Precio", producto.Precio )
+
+            };
+
+         dynamic result =  DBDatos.Ejecutar("Producto_Agregar", parametros);
+
+            return new
+            {
+                success = result.exito,
+                message = result.mensaje,
+                result =""
+
+            };
+
+
+
+
+
+        }
+
+
+
 
 
     }

@@ -5,7 +5,7 @@ namespace NetCoreYouTube.Recursos
 {
     public class DBDatos
     {
-        public static string cadenaConexion = "Data Source=LAPTOP-6QRJ6F82\SQLEXPRESS;Initial Catalog=Test;User ID=sa;Password=";
+        public static string cadenaConexion = "Data Source=LAPTOP-6QRJ6F82\\SQLEXPRESS;Initial Catalog=Test;User ID=desarrollo;Password=desarrollo";
         public static DataSet ListarTablas(string nombreProcedimiento, List<Parametro> parametros = null)
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion);
@@ -74,7 +74,7 @@ namespace NetCoreYouTube.Recursos
             }
         }
 
-        public static bool Ejecutar(string nombreProcedimiento, List<Parametro> parametros = null)
+        public static dynamic Ejecutar(string nombreProcedimiento, List<Parametro> parametros = null)
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion);
 
@@ -94,11 +94,26 @@ namespace NetCoreYouTube.Recursos
 
                 int i = cmd.ExecuteNonQuery();
 
-                return (i > 0) ? true : false;
+              bool exito = (i > 0) ? true : false;
+
+                return new
+                {
+                    exito = exito,
+                    mensaje = "exito"
+                };
             }
             catch (Exception ex)
             {
-                return false;
+
+
+                return new
+                {
+                 exito = false, 
+                 mensaje = ex.Message
+
+                };
+
+
             }
             finally
             {
